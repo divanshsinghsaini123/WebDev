@@ -1,0 +1,79 @@
+HTML ---it is basic building block of web development .
+head -- this contains meta data , title , fevicon , script and style data
+	meta tag -> define metadata about HTML doc. 
+		    used to spacifiy the 
+				--- character set  <meta charset = "utf-8">
+				--- page description
+				--- keywords (for search engin optimiza)
+				--- author 
+				--- viewport 
+				  <meta name ="viewport" content="width=device width, intial-scale(initial zoom)=1.0" >
+	<title>text</title> -> to add the title to the page
+	<link rel="icon" href=" " /> -> to add the favicon the the title 
+	
+	
+	
+				
+	inline elements - they took space according to their size.
+	block elements - they took whole line (in css display property set to block(by default))
+
+    
+    TAG -- keyword which tells the browser how to render differnet elements .(more then 100)
+        <p> -- used for paragraph 
+	<div> -- for grouping many elements ina set..(its block element)
+	<span> -- same as DIV tag but its inline element
+	<br>-- used for new line 
+	<img>
+	<a> - anchor tag.	
+
+
+      generic tag -> we can use them anywhere eg- div
+      semantic tags -> they provides a meaning to the data inside it <table>,<form>,<section>
+             soem semantic tags are--
+		<article> - 
+		<nav>
+		<header>
+		<section>
+		<footer>
+		<aside>	
+    Element -> <open tag>content<close tag> 
+        
+	
+    attribute -> property of a tag. eg-> img has hight attribute (. is used to access)
+         class -> this contains more then one object ( # is used to access)
+	 id -> every element has a unique id 
+	 href -> in anchor tag for inseting link
+	
+	         
+	 
+    list -> ordered list
+		<ol> 
+		  <li> ->list items .
+		  <li> ->  " "
+		</ol>
+
+	 -> UNordered list
+		<ul>
+                  <li> ->list items .
+		  <li> ->  " "
+		</ul>
+	-> description list 
+		<dt>  -> title 
+		<dd>  -> data
+   <pre> -- > this tag does't ignore spaces and new line ..(similar to <p> tag)
+   
+   <table> </table> -> to create the table 
+		<tr> -> table raw(table data contains <td> tags and <td> contains data 
+		<td> -> table data
+		<th> -> table heading 
+		Three parts - <thead>  , <tbody> , <tfoot>
+		colspan , rowspan -> for increasing the space of perticular row
+		<colgroup  calspan="1" style="backgroundcolor="red"> we have to insert this inside <table> here </table>
+		<colgroup calspan="1" style="visibility="collapse" > now you column become invisible           
+    <form> -> to make forms
+		<lable for="username">Username:</label>
+		<input type="text" name="username">   different type->submit,checkbox,  
+     bookmark -> <a href="#id> text  </a>  To add smoothness to scrolling ->  scroll-behavior: smooth
+    			
+     
+      

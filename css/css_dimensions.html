@@ -1,0 +1,57 @@
+<!-- CSS DIMENSON PROPERTIES :
+ width 
+ height 
+ min-height   
+ min-width 
+ max-height
+ max-width
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimesions in CSS</title>
+    <style>
+        .box1{
+             max-height: 100px; 
+             /* after 100px this will overflow , and below 100px height this will fit to the content  */
+             border: 2px solid blue;
+            /* To overcome the overflow after 100px you can use */
+             overflow:scroll;
+             
+             /* Overflow Property :
+                  The overflow css shorthand property sets 
+                  the desired behavior for an element's overflow -
+                  i.e when an element's content is too big to fit in
+                  its block formatting context - in both direction               */
+                 
+                  /* four ways  */
+               /* 1. overflow : visible ;  
+                  2. overflow : hidden ;   overflow text will be cut 
+                  3. overflow : scroll ;
+                  4. overflow : auro ; */
+
+        }
+        .box2{
+            border: 2px solid blue;
+
+            min-height: 100px;
+            /* border will atain the min height if this will any content is not present  */
+        }
+        .box3{
+            border: 2px solid blue;
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"> Lorem ipsum dolo Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perferendis magni animi nam molestias aliquam totam dolorem vero veniam dolores reiciendis quidem et ea inventore est optio porro corrupti non, id quaerat. Asperiores, accusamus saepe! Placeat tenetur distinctio facilis alias voluptatum quas exercitationem enim esse consequuntur veniam ipsa, odio maiores facere possimus sapiente labore illum quisquam illo nobis maxime sed ducimus animi iusto. Quisquam ullam autem voluptas beatae ut minus, sint velit id eum ex unde et reiciendis recusandae veniam ipsa iusto tenetur ipsam numquam laboriosam veritatis iure accusantium. Inventore et asperiores obcaecati ullam alias doloribus dolore! Amet aspernatur, consectetur accusamus rerum cupiditate soluta labore tempore, eos assumenda ducimus provident natus voluptate sapiente, doloribus dolorem veritatis cumque corporis saepe itaque voluptatum ipsum sint esse eligendi quidem? Odio ipsa dolorum eligendi a corporis, quisquam eaque laborum ab dicta vel mollitia nam sequi quas cupiditate debitis iusto neque accusamus! Assumenda, vitae sequi. Id mollitia quam cumque nemo iure, incidunt repellendus commodi animi labore atque? Quas dolores iusto architecto, fugiat expedita officiis at voluptas quia praesentium nihil repellat? Est cumque placeat beatae consequatur impedit ex aliquam quae ullam magni nisi accusantium, porro temporibus alias praesentium voluptatibus quia aperiam dolor suscipit ea culpa? Maiores reprehenderit quos, deleniti consectetur corrupti impedit voluptas voluptatem illo dignissimos, minus quis molestiae ducimus at itaque totam dolorum doloremque amet natus maxime. Quidem fuga, asperiores eveniet cumque eos molestias, minima numquam odit nobis amet atque voluptate? Deserunt officia autem facilis, rem, provident a, accusantium iusto expedita dicta dolor hic sed! Qui consequatur aut error quibusdam. Id dolorem enim possimus sapiente aut quis nisi eveniet! Facilis sed dignissimos incidunt, facere veritatis impedit, nemo earum voluptas illum sit omnis, qui quaerat laborum dolor dolore fuga voluptatem minima ad maxime? Enim hic ad soluta modi, necessitatibus blanditiis provident similique repellendus in corrupti eius.r sit amet consectetur adipisicing elit. Sit eos fugit error, facere numquam doloremque aspernatur esse totam deleniti magni, qui commodi est fuga nam, impedit eveniet eum odio et veniam! Veniam minima error non eos temporibus laudantium doloremque! Ab, id vero impedit architecto voluptatibus eaque odit, fuga inventore qui tempora explicabo repudiandae repellat rem maxime laborum sed error? Nesciunt iure labore laudantium ab eaque non quasi fugit vel, at iste a consequuntur pariatur nobis cupiditate quae omnis ullam dolor numquam amet ut error quidem fuga beatae unde. Laborum quo optio placeat officiis temporibus molestiae praesentium mollitia commodi distinctio exercitationem?hello everyone this is me</div>
+    <br><br><br>
+    <div class="box2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos fugit error, facere numquam doloremque aspernatur esse totam deleniti magni, qui commodi est fuga nam, impedit eveniet eum odio et veniam! Veniam minima error non eos temporibus laudantium doloremque! Ab, id vero impedit architecto voluptatibus eaque odit, fuga inventore qui tempora explicabo repudiandae repellat rem maxime laborum sed error? Nesciunt iure labore laudantium ab eaque non quasi fugit vel, at iste a consequuntur pariatur nobis cupiditate quae omnis ullam dolor numquam amet ut error quidem fuga beatae unde. Laborum quo optio placeat officiis temporibus molestiae praesentium mollitia commodi distinctio exercitationem?hello everyone this is me</div>
+    <br><br><br>
+    <div class="box3">this is divansh</div>
+</body>
+</html>

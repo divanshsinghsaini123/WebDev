@@ -1,0 +1,57 @@
+<!-- css -2D transforms 
+
+    - css transforms allow you to move , rotate , scale and skew elements.
+  with transform property you can use following methods.
+     Translate()
+     rotate()
+     scale()
+     scaleX()
+     scaleY()
+     skew()
+     matrix()
+      -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            background-color: red;
+            max-width: 100px;
+            margin: 200px;
+            /* translate will change the position of block */
+            transform: translate(100px,100px);
+                        /* OR
+            transform: translateX(100px);
+            transform: translatey(100px); */
+            transform: rotate(-45deg);
+                        /* scale the both axis to same  */
+            transform: scale(2);
+            
+                        /* you can scale both seperatly */
+            transform: scale(2,5);
+             
+                     /* or  */
+            /* transform: scalex(2);
+                transform: scaleY(5); */
+             
+            transform:skew(25deg)   ;        
+            /* you can also skew speratly on both 
+                */
+
+
+
+                /* you can only use single transform property at a time 
+                but using matrix you can use multiple of them  */
+
+                transform: matrix();
+        }
+    </style>
+</head>
+<body>
+    <div class="box">abcd</div>
+</body>
+</html>

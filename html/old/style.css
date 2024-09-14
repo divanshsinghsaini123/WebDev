@@ -1,0 +1,52 @@
+/* Id selector */
+#asd
+{
+    background-color: aqua;
+    color: blueviolet;
+}
+/* class selector */
+.xty{
+    color: blue;
+    background-color: #a51515;
+}
+
+/* element selector */
+h2{
+    color: #a51515;
+    background-color: aqua;
+}
+
+p,h1,h2{
+    width: 500px;
+}
+
+/* 
+p.paraclass{
+
+you can also access like this..
+} */
+p{
+    font-style: italic;
+    font-size: 25px;
+    font-family: 'cursive','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:900 ;
+    line-height: 25px;
+}
+#first{
+      background-color: yellow;
+}
+#second{
+
+    background-color: rgb(125, 95, 213);
+}
+#third{
+
+    background-color:rgba(4, 5, 78, 0.1) ;
+}
+#forth{
+
+    background-color: #a51515;
+}
+#five{
+    background-color: hsla(120, 40%, 35%, 0.686);
+}

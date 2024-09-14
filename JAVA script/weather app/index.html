@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">        
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather APP</h1>
+        <div class="tab-container">
+            <p class="tab" user-weather>Your weather</p>
+            <p class="tab" s-weather>Search weather</p>
+        </div>
+
+        <!-- container one  -->
+        <div class="weather-container">
+            <!-- grant permisison -->
+             <div class="grant_location">
+                <img src="./Images/location.png" alt="locationimg" height="80" width="80 " loading="lazy">
+                <p>Grant location access</p>
+                <p>Allow access to get weather information</p>
+                <button class="grant_btn" data-grantAcess>Grant Location</button>
+             </div>
+
+
+        </div>
+
+        
+
+
+        <!-- container two search-->
+         
+            <form class="fc" data-seachFrom> 
+                <input type="search" id="gsearch" name="gsearch" data-s-input placeholder="Search for city...">
+                <button class="btn" seachFrom>
+                    <img src="./Images/search.png" width="20" height="20" loading="lazy">
+                </button>
+              </form>
+      
+
+         <!-- loading screen container  -->
+          <div class="loading-contianer">
+            <img src="./Images/loading.gif" width="150" height="150">
+            <p class="lding">loading</p>
+          </div>
+
+          <!-- main page last container -->
+          <div class="user-info-container">
+            <div class="name">
+                <p data-cityname></p>
+                <img cntry-img>
+            </div>
+
+            <p data-weather-desc></p>
+            <img data-w-icon>
+
+            <p data-temp></p>
+<!-- three cards
+  -->
+            <div class="footer">
+                <!-- card1 -->
+                <div class="parameter">
+                    <img src="./Images/wind.png" alt="">
+                    <p>windspeed</p>
+                    <p data-windspeed></p>
+                </div>
+
+                <!-- card2 -->
+                <div class="parameter">
+                    <img src="./Images/humidity.png" alt="">
+                    <p>humidity</p>
+                    <p data-humidity></p>
+                </div>
+                <!-- card 3 -->
+                <div class="parameter">
+                    <img src="./Images/cloud.png" alt="">
+                    <p>Clouds</p>
+                    <p data-cloudy></p>
+                </div>
+            </div>
+          </div>
+    </div>
+    <script src="mind.js"></script>
+</body>
+</html>

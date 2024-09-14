@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>made a animation</title>
+    
+   <style>
+    .main{
+        width: 100%;
+        height: 95vh;
+        background-color: antiquewhite;
+        border: 3px solid green;
+        box-sizing:border-box;
+        
+    }
+    .box{
+        width: 100px;
+        height: 75px;
+        background-color: blueviolet;
+        border: 3px solid red;
+        margin: 3px;
+        padding: 3px;
+        position: relative;
+        animation-name: rightmoment;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.35, -0.31, 1, 1);
+        animation-delay: 1s;
+        /* animation-direction:alternate-reverse; */
+        animation-fill-mode:forwards;
+        animation-play-state:running;
+        /* This is shortcut method */
+        /* @keyframe duration | Casting function | delay | iteration count | direction | fill mode | Play-state | Name  */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        
+        
+    }
+    @keyframes rightmoment {
+        from{
+            top: 100px;
+            left: 0px;
+        }
+        to{
+            top: 100px;
+            left: 1136px; ;
+        }
+    }
+    .up{
+        height: 35px;   
+        width: 150px;
+        background-color: brown;
+        border: 2px solid black;
+        animation: animation2 3s linear 0s infinite alternate forwards;
+        position: relative;
+
+    }
+    .down{
+        height: 35px;   
+        width: 150px; 
+        background-color: brown;
+        border: 2px solid black;
+        animation: animation3 3s linear 0s infinite alternate-reverse backwards;
+        position: relative;
+        
+
+    }
+    @keyframes animation3 {
+        from{
+            top: 71vh;
+            left: 0px;
+        }
+        to{
+            top: 71.5vh;
+            left: 1136px; 
+        }
+        
+    }
+    @keyframes animation2 {
+        from{
+            top: 0px;
+            left: 0px;
+
+        }
+        to{
+            top: 0px;
+            left: 1136px;
+        }
+
+
+        
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+        top: 0%;
+        left: 3%;
+        border:2px solid black;
+        border-radius: 37px;
+        background-color: brown;
+        position: relative;
+        animation-name: circle1;
+        animation-play-state:running;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        
+    }
+    @keyframes circle1 {
+            0%{
+                top: 0%;
+                left: 3%;
+            }
+            38%{
+                top: 75%;
+                left:50%
+            }
+            100%{
+                top: 0%;
+                left: 95%;
+            }
+
+        
+    }
+   </style>
+</head>
+<body>
+    <h2>we can made animartions using keyframs ,
+        <br>here Keyframes are the steps or positions where the change happened in the normal movement of the object.
+         
+    </h2>
+    <div class="main">
+        <!-- <div class="box">
+            Object
+        </div> <br> -->
+        <div class="up">
+
+        </div>
+        <div class="circle"></div>
+        <div class="down">
+            
+        </div>
+    </div>
+</body>
+</html>

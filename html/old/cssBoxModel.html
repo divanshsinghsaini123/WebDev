@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box Model</title>
+    <style>
+        /* Their is different type of selectors and their is also a universal which apply changes on each element in the document */
+        *{
+            padding: 0;
+            margin: 0;
+            /* their is a property called box-sizing = border-box this casues does not increase in the size of the overall box this shrinks the original content of the box-sizing */
+            box-sizing: border-box;
+        }
+        .max{
+            width: 500px;
+            border: solid rgb(4, 37, 188) 5px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            padding: 20px;   
+            /* you can also give padding to different directions */
+            margin: 20px;
+        }
+        .auto{
+            border: solid rgb(4, 188, 105) 5px;
+            border-radius: 10px;
+            background-color: aqua;
+            width: 500px;;
+            
+        }
+        .min{
+            width: 500px;
+            border: solid rgb(124, 188, 4) 5px;
+            border-radius: 10px;
+            background-color: rgb(200, 3, 118);
+            
+        }
+        .asd{
+            display:inline-block;
+            padding: 10px;
+            border: solid red 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Any type of content that you want to render on the br03'\;lwser display is get render in a rectangular box -->
+    <p>box model has four parts</p>
+    <ul>
+        <li>content</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>margin</li>
+
+    </ul>
+
+    <p class="max">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto doloribus. Delectus vero quo hic sapiente est ab aperiam? Et.</p>
+    <p class="auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur, perspiciatis sed obcaecati id unde iste nisi ducimus molestiae sapiente fugit! Atque odio necessitatibus praesentium.
+    <p class="min">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum pariatur omnis quaerat debitis vero dignissimos, natus error iure asperiores consequatur. Deleniti ipsa possimus cupiditate at, laborum libero praesentium magni consectetur.</p>
+
+    </p>
+    <span class="asd">eliimus quam quidem.</span>
+</body>
+</html>

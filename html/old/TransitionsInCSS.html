@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in Css </title>
+    <style>
+        #box{
+            width: 200px;            
+            height: 200px ;
+            border: 2px solid black;
+            background-color: rgb(234, 141, 19);
+            transition:all 3s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
+        #box:hover{
+            width: 700px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions Css</h1>
+    <h2>Sourse (initial state) to Destination (final state)
+        <br> 
+    </h2>
+    <div id="box">
+        
+
+    </div>
+</body>
+</html>

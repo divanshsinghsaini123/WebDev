@@ -1,0 +1,45 @@
+<!-- All the content you placed in a page is a rectangular box  -->
+<!-- and may have width,height,padding,border and margin. -->
+<!--  margin-> space between two borders  -->
+<!-- padding -> space between content and border-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 2px solid rgb(255, 64, 0);
+            background-color: yellow;
+            margin: 10px; 
+            padding:20px;
+            box-sizing:border-box;
+     /* box sizing :border-box -- this will fix the height and width of the box 
+     and only change the h and w of content indside when we change the padding*/
+            
+        }
+        #org{ 
+            background-color: orange;
+        }
+        #whi{
+            background-color: rgb(199, 195, 195);
+        }
+        #gre{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="org">A</div>
+    <div class="box" id="whi">B</div>
+    <div class="box" id="gre">C</div>
+</body>
+</html>

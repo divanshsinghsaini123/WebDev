@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shadows(text && box)</title>
+    <style>
+        
+        .container{
+            background:rgb(213, 156, 156);
+            border: 3px solid rgb(249, 4, 4);
+            height:700px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .box{
+            /* we can also make variables, for using further so, we can control the whole page colors and width and other things at single change */
+            --primary-color:red;
+            --custom-width:400px;
+            background: #07f7fb;
+            border: 3px solid var(--primary-color);
+            width: var(--custom-width);
+            height: var(--custom-width);
+            margin: 2px;
+            padding: 2px;
+            box-shadow: 15px 15px 5px 4px  rgb(60, 0, 255);
+            /* you can add multiple shadow by using comma(,) between them */
+        }
+        img{
+          mix-blend-mode:multiply;
+          width: 30%;
+          
+        }
+        /* now try to give shadow to the Text */
+        #saini1{
+          text-shadow: 2px 2px 3px var(--primary-color);
+          /* here 2px denotes the x-axis 2nd 2px denotes the y-axis and 3px denotes the blur radius and red denotes the color */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="logo.jpg" />
+        <h2 id="saini1">Welcome To Volkswagan</h2>
+        <h3><b>Note-</b>by default your shadow color is black</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, eius
+          eveniet, suscipit quos quam, voluptatem aliquid velit illum at
+          accusantium voluptates porro sunt et modi amet tempore. Ipsam,
+          obcaecati temporibus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

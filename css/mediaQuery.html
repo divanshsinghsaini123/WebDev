@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web31</title>
+    <style>
+      
+      .container {
+        background-color: yellow;
+        width: 550px;
+        height: 650px;
+        
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
+        grid-template-rows: 30px 1fr 30px;
+        grid-template-areas:
+          "hd hd "
+          "sd ct"
+          "ft ft";
+      }
+      .container div {
+        background-color: red;
+        border: 2px solid black;
+        text-align: center;
+        
+
+      }
+      .box1 {
+        grid-area: hd;
+      }
+      .box2 {
+        grid-area: sd;
+      }
+      .box3 {
+        grid-area: ct;
+      }
+      .box4 {
+        grid-area: ft;
+      }
+
+      @media(min-width:600px){ 
+         .container{
+
+            grid-template-rows:30px 1fr  1fr 30px;
+            grid-template-columns:1fr;
+            gap: 20px;
+            grid-template-areas: 
+            "hd"
+            "sd"
+            "ct"
+            "ft";
+
+         }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="box1">header</div>
+        <div class="box2">side</div>
+        <div class="box3">content</div>
+        <div class="box4">footer</div>
+      </div>
+    </div>
+  </body>
+</html>

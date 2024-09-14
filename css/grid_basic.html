@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            background-color: red;
+            display: grid;
+            grid-template-rows: repeat(10 , 1fr);
+            grid-template-columns: repeat(10 , 1fr);
+            /* grid-gap: 10px; */
+            gap:10px;
+            /* grid-column-gap: 10px; */
+            border: 10px solid red;
+            /* justify-content: space-between; */
+            /* align-items: last baseline; */
+
+        }
+        .container div{
+            background-color: blue;
+            /* border:2px solid yellow; */
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end:11;
+           
+        }
+        .box2{
+            /* justify-self: center; */
+            /* align-self: center; */
+            grid-column-start: 1;
+            grid-column-end:3;
+            
+            grid-row-start:2;
+            grid-row-end: 10;
+        }
+        .box3{
+            grid-column-start: 3;
+            grid-column-end: 11;
+            
+            grid-row-start:2;
+            grid-row-end: 10;
+        }
+        .box4{
+            grid-column-start:1;
+            grid-column-end:11;
+        }
+
+        .container2{
+            /* height: ; */
+            background-color: red;
+            display: grid;
+            border:3px solid green;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 3fr 18fr 3fr;
+
+        }
+        .b1, .b4{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                
+
+        }
+        /* .b4{
+                grid-column-start: ;
+                grid-column-end:3;
+                
+        } */
+
+        .container2 div{
+            background-color: blue;
+            border: 3px solid white;
+        
+
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        
+     </div>
+     <br>
+     <br>
+     <div class="container2">
+        <div class="b1">box1</div>
+        <div class="b2">box2</div>
+        <div class="b3">box3</div>
+        <div class="b4">box4</div>
+     </div>
+</body>
+</html>

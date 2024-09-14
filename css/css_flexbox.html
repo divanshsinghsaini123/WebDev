@@ -1,0 +1,42 @@
+<!-- css flexbox - flexbox is a great way to get more flexibility in your layout design . 
+    it makes it easy to align elements on a 2D plave and is pretty eassy to use once you get familiar with the main properties.
+display: flex ; --> this convert the container into flex
+<!-- flex-direction : column --> by default 
+<!-- flex-direction : row -> 
+flex-wrap : wrap ; -> this give the flexability after sequsing the window
+
+Two merge both direction and wrap property at same time 
+you can use -flex-flow
+
+flex -flow : row wrap;
+
+justify-content:       this will align items on defautl axis , x axis. ->
+
+align-items`: This aligns the flex items along the cross axis. The possible values are `flex-start`, `flex-end`, `center`, `baseline`, and `stretch`.
+align-content`: This aligns the flex lines when there is extra space in the cross-axis. The possible values are `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, and `stretch`.   
+                This property has no effect on single line flex containers (i.e. ones with `flex-wrap: nowrap`).
+ 
+- `order`: This property is used to change the order of individual flex items. It takes an integer value and the default value is 0. (hm isse flex items ka sequence change kr skte hain ).
+- `flex-shrink`: This property specifies how much a flex item will shrink relative to the rest of the flex items in the container. It takes a unitless value where 1 (default)
+             means the item will shrink if necessary, 0 means the item is not allowed to shrink.
+ 
+ 
+            -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<body>
+    <!-- .containerr>.box*4{box$} -->
+    <div class="containerr">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+    </div>
+</body>
+</html>

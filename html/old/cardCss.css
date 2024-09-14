@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 290px;
+    height: 410px;
+    border-radius: 20px;
+    background: rgba(65, 142, 125, 0.887);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center */
+    align-items: center;
+    padding-top :33px;
+    /* gap: 15px; */
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction:alternate;
+    /* animation-fill-mode:forwards; */
+    animation-play-state:running;
+}
+@keyframes blink {
+    0%{
+        box-shadow: 0px 0px 0px 0px rgb(146, 180, 32) ;
+
+    }
+    38%{
+        box-shadow: 5px 5px 50px 2px rgb(69, 17, 182) ;
+
+    }
+    100%{
+        box-shadow: 13px 13px 80px 5px rgb(161, 64, 106) ;
+
+    }
+}
+h2{
+    margin-left: 15px;
+    margin-top: 17px;
+}
+p{
+    margin-top :5px;
+    margin-left: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+img{
+    transition: all 1.2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+img:hover{
+    transform:scale(1.1);
+}
+

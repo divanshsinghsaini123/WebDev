@@ -1,0 +1,52 @@
+<!-- // css -- how content appears (styling and formating of the content)
+//selector in css -(using which we can select a element)
+   // Simple selector
+        //1. element selector 
+        //2. class selector
+        //3. id selector
+    // Pseudo selector-> a spacial state of a keyword can be changed
+
+    // Multiple selector -->
+    <!-- // nested selector -->
+
+<!-- how to add style in css --three ways -->
+     <!-- inline --use style tag as a attribute of element
+     internal  -- style tag inside head .
+     external -- exteranl .css file is linked using  <link rel="stylesheet" href="name.css" 
+spacificity --tag<class<id<inline<!important  (priority)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css basic</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* element selector */
+        p{   
+            color: red;
+        }
+        /* class selector */
+        .man{
+            background-color: black;
+        }
+        /* id selector */
+        #rr{
+            font-size: x-large;
+        }
+        /* pseudo selector  */
+        p:hover{
+            color: blue;
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>"resume"</h1>
+    <p class="man">this is a man</p>
+    <p class="man">their is no footware</p>
+    <p id="rr">this place is ismailabad</p>
+
+
+</body>
+</html>
